@@ -332,20 +332,17 @@ let cars = [
       }
 ];
 
-class Car extends React.Component{
-    render(){
-        return (
-            <car>
-                
-            </car>
-        );
-    }
+function  Cars(props){
+ return (
+    <ul>
+      {props.cars.map((car,index)=>{
+         return (
+           <CarItem car = {car} />  
+         )
+      })}
+    </ul>
+ )
 }
-class Cars extends React.Component{
-  render(){
-      return (<main><h1>Список машин</h1>
-        <div></div></main>);
-  }
-}
+
 
 export default Cars;
