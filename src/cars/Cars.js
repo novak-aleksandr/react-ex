@@ -337,7 +337,9 @@ function  Cars(props){
     <ul>
       {props.cars.map((car,index)=>{
          return (
-           <CarItem car = {car} />  
+           <ul>
+           <li car = {car} />  
+           </ul>
          )
       })}
     </ul>
